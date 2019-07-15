@@ -1,12 +1,39 @@
 {
   "pages": [
+    "pages/shops/index",   
+    "pages/buy-car/index",
+    "pages/center/index",
     "pages/login/index",
     "pages/home/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "mpvue-wx",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FF0000",
+    "list": [
+      {
+        "pagePath": "pages/shops/index",
+        "text": "全部",
+        "iconPath": "/static/images/shops.png",
+        "selectedIconPath": "/static/images/shops.png"
+      },
+      {
+        "pagePath": "pages/buy-car/index",
+        "text": "购物车",
+        "iconPath": "/static/images/car.png",
+        "selectedIconPath": "/static/images/car.png"
+      },
+      {
+        "pagePath": "pages/center/index",
+        "text": "个人中心",
+        "iconPath": "/static/images/center.png",
+        "selectedIconPath": "/static/images/center.png"
+      }
+    ]
   }
 }

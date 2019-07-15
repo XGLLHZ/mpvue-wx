@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import { login } from '../../http/api'
 import { $Toast } from '../../../dist/wx/static/iView/base'
 import { mapActions } from 'vuex'
 export default {
@@ -50,6 +51,7 @@ export default {
             if (this.once) {
                 this.once = false
                 const detail = e.mp.detail
+                const _this = this
                 const options = {
                     code: _this.code,
                     iv: detail.iv,
@@ -88,6 +90,11 @@ export default {
                     $Toast({
                         content: '登录失败！',
                         type: 'info'
+                    })
+                    //此时的登录失败跳转到主页面只是为了测试
+                    this.$router.push({
+                        path: '/pages/home/index',
+                        reLaunch: true
                     })
                 })
             }
