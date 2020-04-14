@@ -1,15 +1,14 @@
 {
   "pages": [
-    "pages/shops/index",   
-    "pages/buy-car/index",
-    "pages/center/index",
     "pages/login/index",
-    "pages/home/index"
+    "pages/home/index",
+    "pages/events/index",   
+    "pages/center/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "mpvue-wx",
+    "navigationBarTitleText": "意中人与怀中猫",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -17,20 +16,20 @@
     "selectedColor": "#FF0000",
     "list": [
       {
-        "pagePath": "pages/shops/index",
-        "text": "全部",
-        "iconPath": "/static/images/shops.png",
-        "selectedIconPath": "/static/images/shops.png"
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/static/images/home.png",
+        "selectedIconPath": "/static/images/home.png"
       },
       {
-        "pagePath": "pages/buy-car/index",
-        "text": "购物车",
-        "iconPath": "/static/images/car.png",
-        "selectedIconPath": "/static/images/car.png"
+        "pagePath": "pages/events/index",
+        "text": "纪念日",
+        "iconPath": "/static/images/event.png",
+        "selectedIconPath": "/static/images/event.png"
       },
       {
         "pagePath": "pages/center/index",
-        "text": "个人中心",
+        "text": "美好时光",
         "iconPath": "/static/images/center.png",
         "selectedIconPath": "/static/images/center.png"
       }

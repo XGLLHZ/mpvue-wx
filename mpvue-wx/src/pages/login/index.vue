@@ -19,6 +19,7 @@ export default {
             once: true
         }
     },
+    
     //小程序页面加载时执行
     onLoad() {
         this.code = ''
@@ -35,10 +36,12 @@ export default {
             }
         })
     },
+
     //监听页面加载
     onUnload() {
         Object.assign(this.$data, this.$options.data())
     },
+    
     methods: {
         /**
          * 微信登录小程序流程：
